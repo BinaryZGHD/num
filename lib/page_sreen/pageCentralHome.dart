@@ -123,7 +123,7 @@ class _MyPageCentralState extends State<MyPageCentral> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => Dialogs())
+                        builder: (context) => class_Dialogs())
                 );
               },
               child: Container(
@@ -402,22 +402,22 @@ class _MyPageCentralState extends State<MyPageCentral> {
                   child: Food_Item(
                     data: listFood[index],
                     onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) {
-                        return Custom_Dialog_Box(
-                          id: '${index}',
-                          img: menu[index].img,
-                          title: '${index + 1}. ' + menu[index].nfood,
-                          descriptions: menu[index].subnfood,
-                          dietf: '${menu[index].dietfood}',
-                          methodf: '${menu[index].methodfood}',
-                          imgf: '${menu[index].img}',
-                          detailf: '${menu[index].detailfood}',
-                          nfood: '${menu[index].nfood}',
-                          mashf: '${menu[index].mashfood}',
-                          text: "Okay",
-                        );
-                      }));
+                      showDialog(context: context,
+                          builder: (context) => Custom_Dialog_Box(
+                              id: '${index}',
+                              img: menu[index].img,
+                              title: '${index + 1}. ' + menu[index].nfood,
+                              descriptions: menu[index].subnfood,
+                              dietf: '${menu[index].dietfood}',
+                              methodf: '${menu[index].methodfood}',
+                              imgf: '${menu[index].img}',
+                              detailf: '${menu[index].detailfood}',
+                              nfood: '${menu[index].nfood}',
+                              text: "Okay",
+                              mashf: '${menu[index].mashfood}'
+                          )
+
+                      );
                     },
                   )))),
     );

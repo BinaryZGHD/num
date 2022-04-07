@@ -3,14 +3,14 @@
 import 'package:flutter/material.dart';
 import 'package:num/page_sreen/pageCustomDialogBox.dart';
 
-class Dialogs extends StatefulWidget {
-  const Dialogs({Key? key}) : super(key: key);
+class class_Dialogs extends StatefulWidget {
+  const class_Dialogs({Key? key}) : super(key: key);
 
   @override
-  _DialogsState createState() => _DialogsState();
+  _class_DialogsState createState() => _class_DialogsState();
 }
 
-class _DialogsState extends State<Dialogs> {
+class _class_DialogsState extends State<class_Dialogs> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,8 +28,9 @@ class _DialogsState extends State<Dialogs> {
                   return Custom_Dialog_Box(
                     img: "assets/model.jpeg",
                     title: "Custom Dialog Demo",
-                    descriptions: "Hii all this is a custom dialog in flutter and  you will be use in your flutter applications",
-                    text: "Okey", detailf: '', imgf: 'assets/model.jpeg', dietf: '', nfood: '', mashf: '', methodf: '', id: '',
+                    descriptions: "เนื้อหาของ Dialog ที่สร้างเอง",
+                    text: "Okey", detailf: '', imgf: 'assets/model.jpeg',
+                    dietf: '', nfood: '', mashf: '', methodf: '', id: '',
 
 
                   );

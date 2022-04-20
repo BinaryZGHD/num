@@ -25,7 +25,7 @@ class _class_DialogsState extends State<class_Dialogs> {
               onPressed: (){
                 showDialog(context: context,
                   builder: (BuildContext context){
-                  return Custom_Dialog_Box(
+                  return CustomDialogBox(
                     img: "assets/model.jpeg",
                     title: "Custom Dialog Demo",
                     descriptions: "เนื้อหาของ Dialog ที่สร้างเอง",

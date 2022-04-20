@@ -7,7 +7,7 @@ import 'package:num/page_sreen/pageMunuDetail.dart';
 import '../const_app/constants.dart';
 import '../class_data/listFoodMenu.dart';
 
-class Custom_Dialog_Box extends StatefulWidget {
+class CustomDialogBox extends StatefulWidget {
   final String title, id,
       descriptions,
       text,
@@ -20,15 +20,15 @@ class Custom_Dialog_Box extends StatefulWidget {
   final  String img;
 
 
-  const Custom_Dialog_Box({Key? key, required this.title, required this.descriptions,
+  const CustomDialogBox({Key? key, required this.title, required this.descriptions,
     required this.text, required this.img, required this.nfood, required this.imgf,
     required this.detailf, required this.dietf, required this.mashf, required this.methodf, required this.id,  }) : super(key: key);
 
   @override
-  _Custom_Dialog_BoxState createState() => _Custom_Dialog_BoxState();
+  _CustomDialogBoxState createState() => _CustomDialogBoxState();
 }
 
-class _Custom_Dialog_BoxState extends State<Custom_Dialog_Box> {
+class _CustomDialogBoxState extends State<CustomDialogBox> {
 
 
   @override
@@ -77,7 +77,7 @@ class _Custom_Dialog_BoxState extends State<Custom_Dialog_Box> {
                       Navigator.push(context,
                               MaterialPageRoute(builder: (BuildContext context) {
                             int index = int.parse(widget.id);
-                            return Page_Menu_Detail(
+                            return PageMenuDetail(
                                 // data: recommends[index],
                                 nfood: '${index + 1}. ' + menu[index].nfood,
                                 imgf: menu[index].img,

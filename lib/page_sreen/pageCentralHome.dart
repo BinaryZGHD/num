@@ -252,10 +252,10 @@ class _MyPageCentralState extends State<MyPageCentral> {
           padding: const EdgeInsets.only(top: 10, bottom: 10),
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            getIcon_Bitcoin(),
-            SizedBox(
-              height: 15,
-            ),
+            // getIcon_Bitcoin(),
+            // SizedBox(
+            //   height: 15,
+            // ),
             Padding(
               padding: const EdgeInsets.fromLTRB(15, 0, 15, 10),
               child: Text("Thai Food",
@@ -377,7 +377,7 @@ class _MyPageCentralState extends State<MyPageCentral> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => Page_Menu_Detail(
+                              builder: (context) => PageMenuDetail(
                                   data: listFood[index],
                                   nfood: '${index + 1}. ' + menu[index].nfood,
                                   imgf: menu[index].img,
@@ -403,7 +403,7 @@ class _MyPageCentralState extends State<MyPageCentral> {
                     data: listFood[index],
                     onTap: () {
                       showDialog(context: context,
-                          builder: (context) => Custom_Dialog_Box(
+                          builder: (context) => CustomDialogBox(
                               id: '${index}',
                               img: menu[index].img,
                               title: '${index + 1}. ' + menu[index].nfood,

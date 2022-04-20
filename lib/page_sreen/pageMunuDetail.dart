@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 //   runApp(const MyApp());
 // }
 
-class Page_Menu_Detail extends StatelessWidget {
+class PageMenuDetail extends StatelessWidget {
   // Page_Menu
   final String nfood ;
   final String imgf ;
@@ -12,7 +12,7 @@ class Page_Menu_Detail extends StatelessWidget {
   final String dietf ;
   final String mashf ;
   final String methodf ;
-  const Page_Menu_Detail({Key? key, required this.nfood, required this.imgf, required this.detailf, required this.dietf, required this.mashf, required this.methodf, data, }) : super(key: key);
+  const PageMenuDetail({Key? key, required this.nfood, required this.imgf, required this.detailf, required this.dietf, required this.mashf, required this.methodf, data, }) : super(key: key);
 
 
 

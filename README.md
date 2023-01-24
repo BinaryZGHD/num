@@ -160,7 +160,7 @@ A Flutter project ระบบจัดการข้อมูลนิสิ�
 ดาวน์โหลด source code ลงเครื่องคอมพิวเตอร์ที่จะใช้งาน:  👇
 
 ```dart
-$ git clone https://github.com/math-sci-buu-db-169/project-mobile-ez-at-u.git
+$ git clone https://github.com/.../project-mobile-ez-at-u.git
 ```
  Unzip the downloaded flutter example archive.
 
